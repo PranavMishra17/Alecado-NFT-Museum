@@ -214,7 +214,7 @@ Transform:
   m_GameObject: {fileID: 924576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 1, z: 20}
+  m_LocalScale: {x: 5, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -350,14 +350,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPrefabs:
-  - {fileID: 3305581528943329081, guid: 96c1702b56fa5a7488457a6a515ac58e, type: 3}
-  - {fileID: 6103262681899122112, guid: fcabbf6dce97b4143895e121697800f1, type: 3}
-  - {fileID: 7019088425620113033, guid: 5da73550c90a266498e0fcd9c6437148, type: 3}
-  - {fileID: 1577362923990514326, guid: 3ef454cc035adc1489a9aec1f5a10d55, type: 3}
-  - {fileID: 2369712856593308033, guid: 730000931cae1454c8083362445e8f75, type: 3}
-  - {fileID: 329728464637169899, guid: 59b9fc048e4b5184bbd6bb8efc356091, type: 3}
-  - {fileID: 6562031803846321546, guid: 619f88d1e87438a43a166f80364f0fd4, type: 3}
-  - {fileID: 7706473263718013719, guid: bda9b0031f8f38e4e98e7780f1fea9b8, type: 3}
+  - {fileID: 2815655484657303468, guid: ab8c2093a406f16469689271ac1bc1f5, type: 3}
+  - {fileID: 8550672725159878, guid: 7d3f8564394af8242922300337f7ed55, type: 3}
+  - {fileID: 3876580769961107127, guid: 0ccb891e8efd06a418536b871263b683, type: 3}
+  - {fileID: 8438217496902501216, guid: dff4156bad7a188448c71b421a17243d, type: 3}
   spawnPoint: {fileID: 1334043488}
   chrName: {fileID: 1602155605}
   chrRole: {fileID: 1639148429}
@@ -369,7 +365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334043486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.21, z: -3.73}
+  m_LocalPosition: {x: 0, y: 0.5, z: -3.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

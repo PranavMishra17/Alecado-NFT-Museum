@@ -53,12 +53,13 @@ public class CharacterSelection : MonoBehaviour
     }
     public void SetRole()
     {
-        if(dropdown.value == 0 )
+        Debug.Log(" value: " + dropdown.value);
+        if(dropdown.value == 1 )
         {
             playerRole = "Visitor";
             PlayerPrefs.SetString("playerRole", playerRole);
         }
-        if(dropdown.value == 1)
+        if(dropdown.value == 2)
         {
             playerRole = "Museum Owner";
             PlayerPrefs.SetString("playerRole", playerRole);
