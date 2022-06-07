@@ -372,6 +372,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5487767728358244680, guid: 7d3f8564394af8242922300337f7ed55, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d3f8564394af8242922300337f7ed55, type: 3}
 --- !u!4 &412457082 stripped
@@ -470,6 +474,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1588313119}
     m_Modifications:
+    - target: {fileID: 1608505325273772337, guid: 0ccb891e8efd06a418536b871263b683, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3876580769961107127, guid: 0ccb891e8efd06a418536b871263b683, type: 3}
       propertyPath: m_Name
       value: Ch22_nonPBR@Idle Variant
@@ -1210,6 +1218,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1588313119}
     m_Modifications:
+    - target: {fileID: -7468983816670442808, guid: ab8c2093a406f16469689271ac1bc1f5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2815655484657303468, guid: ab8c2093a406f16469689271ac1bc1f5, type: 3}
       propertyPath: m_Name
       value: Ch42_nonPBR@Idle Variant
@@ -2075,7 +2087,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Visitor
+  m_Text: Museum Owner
 --- !u!222 &1575983230
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2359,6 +2371,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1588313119}
     m_Modifications:
+    - target: {fileID: 3177448612033759984, guid: dff4156bad7a188448c71b421a17243d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8438217496902501216, guid: dff4156bad7a188448c71b421a17243d, type: 3}
       propertyPath: m_Name
       value: Ch26_nonPBR@Idle Variant
@@ -2643,7 +2659,7 @@ MonoBehaviour:
   m_CaptionImage: {fileID: 0}
   m_ItemText: {fileID: 1645789512}
   m_ItemImage: {fileID: 0}
-  m_Value: 0
+  m_Value: 2
   m_Options:
     m_Options:
     - m_Text: Visitor
