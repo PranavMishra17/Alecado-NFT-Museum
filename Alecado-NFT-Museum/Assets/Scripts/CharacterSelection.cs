@@ -37,7 +37,7 @@ public class CharacterSelection : MonoBehaviour
     public void Play()
     {
         PlayerPrefs.SetInt("selectedCharacter", selecterCharacter);
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        //SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
     public void SetName()
     {

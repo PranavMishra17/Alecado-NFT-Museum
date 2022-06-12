@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon;
 
-public class ACtrl : MonoBehaviour
+public class ACtrl : UnityEngine.MonoBehaviour
 {
     Animator chAnim;
-
+    PhotonView view;
     CharacterController characterController;
 
     public float speed = 6.0f;
@@ -18,6 +19,10 @@ public class ACtrl : MonoBehaviour
     private float xRotation = 0f;
 
 
+    public Transform t1;
+    public Transform t2;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,29 +32,33 @@ public class ACtrl : MonoBehaviour
         _camera = Camera.main;
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        view = GetComponent<PhotonView>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ( Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("w") || Input.GetKey("d"))
+        if (view.isMine)
         {
-            chAnim.SetBool("isWalking", true);
-
-            if (Input.GetKey("left shift"))
+            if (Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("w") || Input.GetKey("d"))
             {
-                chAnim.SetBool("isRunning", true);
+                chAnim.SetBool("isWalking", true);
+
+                if (Input.GetKey("left shift"))
+                {
+                    chAnim.SetBool("isRunning", true);
+                }
+                else chAnim.SetBool("isRunning", false);
             }
-            else chAnim.SetBool("isRunning", false);
+            else chAnim.SetBool("isWalking", false);
+
+            if (Input.GetKey("e"))
+            {
+                chAnim.SetBool("isLooking", true);
+            }
+            else chAnim.SetBool("isLooking", false);
         }
-        else chAnim.SetBool("isWalking", false);
-
-        if (Input.GetKey("e"))
-        {
-            chAnim.SetBool("isLooking", true);
-        }
-        else chAnim.SetBool("isLooking", false);
-
-
+        
     }
 }
