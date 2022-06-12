@@ -68,7 +68,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7734389828376889624, guid: 9f5605f846d4a4440b69c1e69d7c2c21, type: 3}
       propertyPath: minDisttoTarget
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7734389828376889625, guid: 9f5605f846d4a4440b69c1e69d7c2c21, type: 3}
       propertyPath: m_RootOrder

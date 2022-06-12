@@ -16,11 +16,12 @@ public class ConnectToServer : Photon.PunBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        str = Application.version;
         if (SceneManager.GetActiveScene().name == "SelectScene")
         {
-            Debug.Log("in start");
             roomOptions = new RoomOptions() { IsVisible = true, MaxPlayers = 20 };
             PhotonNetwork.ConnectUsingSettings(str);
+            Debug.Log("Connecting To photon.....");
         }
     }
 
@@ -92,9 +93,17 @@ public class ConnectToServer : Photon.PunBehaviour
         Debug.Log("Join room fail" + codeAndMsg);
        
     }
+    public override void OnConnectionFail(DisconnectCause cause)
+    {
 
+        Debug.Log("Connected fail: ");
+        base.OnConnectionFail(cause);
+        Debug.Log("cause : " + cause);
+    }
     public override void OnDisconnectedFromPhoton()
     {
+
+        Debug.Log("DisConnected from Photon: ");
         retry = true;
         PhotonNetwork.LoadLevel("SelectScene");
 
@@ -108,7 +117,7 @@ public class ConnectToServer : Photon.PunBehaviour
 
     IEnumerator LoadM()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
         PhotonNetwork.LoadLevel("Scene1");
     }
 

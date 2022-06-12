@@ -13,7 +13,7 @@ public class HeadFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //player = GetComponentInParent<>
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -21,7 +21,6 @@ public class HeadFollow : MonoBehaviour
     {
         if (lookAtCameraDirection)
         {
-            
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Camera.main.transform.rotation, headRotSpeed * Time.deltaTime);
         }
         else if (lookAtPlayer)
