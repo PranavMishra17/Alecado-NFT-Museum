@@ -43,8 +43,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 325251073132124953, guid: 263319962468aa745990f199aa8a1a60, type: 3}
+      propertyPath: qqq
+      value: Ask Dodo questions. Press number
+      objectReference: {fileID: 0}
+    - target: {fileID: 325251073132124953, guid: 263319962468aa745990f199aa8a1a60, type: 3}
       propertyPath: tags.Array.size
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 325251073132124953, guid: 263319962468aa745990f199aa8a1a60, type: 3}
+      propertyPath: obName.Array.size
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 325251073132124953, guid: 263319962468aa745990f199aa8a1a60, type: 3}
       propertyPath: SoundEffect.Array.size

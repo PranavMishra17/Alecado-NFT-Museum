@@ -99,13 +99,16 @@ public class ConnectToServer : Photon.PunBehaviour
         Debug.Log("Connected fail: ");
         base.OnConnectionFail(cause);
         Debug.Log("cause : " + cause);
+        PhotonNetwork.ConnectUsingSettings(str);
+        Debug.Log("Connecting To photon.....");
     }
     public override void OnDisconnectedFromPhoton()
     {
 
         Debug.Log("DisConnected from Photon: ");
         retry = true;
-        PhotonNetwork.LoadLevel("SelectScene");
+        PhotonNetwork.ConnectUsingSettings(str);
+        Debug.Log("Connecting To photon.....");
 
     }
 

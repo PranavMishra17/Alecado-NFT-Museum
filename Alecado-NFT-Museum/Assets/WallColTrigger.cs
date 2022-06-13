@@ -25,23 +25,12 @@ public class WallColTrigger : MonoBehaviour
         {
             rf.switchtarget();
         }
-        if (co.tag == "Player")
-        {
-            rt.takeTalkInput = true;
-           // rt.talkUI.SetActive(true);
-        }
     }
     public void OnTriggerExit(Collider co)
     {
         if (co.tag == "Wall")
         {
             rf.switchtarget();
-        }
-        if (co.tag == "Player")
-        {
-            rt.takeTalkInput = false;
-
-           // rt.talkUI.SetActive(false);
         }
     }
 }
